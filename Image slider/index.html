@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image slider</title>
+        <style>
+            body {
+                height: 100vh;
+                margin: 0;
+                display: grid;
+                place-items: center;
+                background-color: palevioletred;
+            }
+            .slider-container {
+                position: relative;
+                width: 500px;
+                height: 300px;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px #0000004d;
+            }
+            .image-container {
+                display: flex;
+                transition: transform 0.4s ease-in-out;
+            }
+            img {
+                width: 500px;
+                height: auto;
+            }
+            .btn {
+                position: absolute;
+                top: 50%;
+                color: black;
+                font-size: 1.6rem;
+                transform: translate(-50%);
+                opacity: 0.7;
+                cursor: pointer;
+            }
+            .btn.prev {
+                left: 10px;
+            }
+            .btn.next {
+                right: 10px;
+            }
+            .btn:hover {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slider-container">
+            <div class="image-container">
+      <img src="84af0d6c81e33aa9ea0411314d76616c.jpg" alt="Image 1">
+      <img src="264289_after.png" alt="Image 2">
+      <img src="1339216.png" alt="Image 3">
+      <img src="desktop-wallpaper-ciao-salut-hello-kitty-background-hello-kitty-kitty-cute-hello-kitty-laptop-thumbnail.jpg" alt="Image 4">
+      <img src="hello-kitty-pc-n0hbuqi0ekgs4n35.jpg" alt="Image 5">
+    </div>
+      <button class="btn prev">&lt;</button>
+      <button class="btn next">&gt;</button>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
